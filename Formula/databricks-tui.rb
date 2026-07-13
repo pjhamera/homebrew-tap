@@ -7,16 +7,16 @@ class DatabricksTui < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/pjhamera/databricks-tui/releases/download/v#{version}/databricks-tui-macos-arm64.tar.gz"
-      sha256 "cc1ea044c5e7e272766c3d89fccca0b2573879734d694ce877f2a8afdd07eba1"
+      sha256 "74d8525377662776e6b01b3fc1550e6f442acca57f2cb933a3e24d85b9cc261c"
     else
       url "https://github.com/pjhamera/databricks-tui/releases/download/v#{version}/databricks-tui-macos-x86_64.tar.gz"
-      sha256 "ec2dad9350da622cfa97b695322157673193965c53de47c718185c7ba2fe2493"
+      sha256 "184798ef5fccbea137ac2f50d6ee6e33e1849e20803b0680ede86ec60a720c99"
     end
   end
 
   on_linux do
     url "https://github.com/pjhamera/databricks-tui/releases/download/v#{version}/databricks-tui-linux-x86_64.tar.gz"
-    sha256 "fa804239d155d5f63012dd9215866c94f261c2408dcfa6b08462b87fbaa1a5e8"
+    sha256 "a30a0e66fa6cb0760ef244dac8143fd73153285b0bdf2c4b6df33684b5eb8dbf"
   end
 
   def install
