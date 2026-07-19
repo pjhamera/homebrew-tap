@@ -1,22 +1,22 @@
 class DatabricksTui < Formula
   desc "Terminal dashboard for Databricks"
   homepage "https://github.com/pjhamera/databricks-tui"
-  version "0.25.0"
+  version "0.26.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/pjhamera/databricks-tui/releases/download/v#{version}/databricks-tui-macos-arm64.tar.gz"
-      sha256 "0ded0f2b3ad9f2920b9b7a869cef64de996c18564219d58f1b44f13d5f5a30d2"
+      sha256 "91d257db64baa8cf47b78c2ad2a42b4d96ef03b1b349638e6f7f42739084b495"
     else
       url "https://github.com/pjhamera/databricks-tui/releases/download/v#{version}/databricks-tui-macos-x86_64.tar.gz"
-      sha256 "749b704feb306fb1c78c0436333e89b2373d8061f9e150bc03e9537cd75fd4e1"
+      sha256 "26fc5870e463e491357f8860d904cdc7f2638fa0a85eed40e76f2c37fa01c6c7"
     end
   end
 
   on_linux do
     url "https://github.com/pjhamera/databricks-tui/releases/download/v#{version}/databricks-tui-linux-x86_64.tar.gz"
-    sha256 "b149f71b2e26e9d73e0dacd5fdefc948a59ac97ac1df162416361272571f09ce"
+    sha256 "e121a424047d7fa593f05f878446a820ec0b71d6ccffe27bb65d3a5924beed7f"
   end
 
   def install
